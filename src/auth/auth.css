@@ -84,9 +84,17 @@
   font-weight: 500;
   margin-top: -0.5rem;
 }
-
+.auth-box p.info-message {
+  font-size: 0.9rem;
+  color: #437483; /* subtle gray */
+  margin: 12px 0;
+  line-height: 1.4;
+  text-align: center;
+}
 /* Fade animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+

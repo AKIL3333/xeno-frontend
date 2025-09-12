@@ -37,7 +37,7 @@ const Signup = () => {
         <h2>Tenant Signup</h2>
         <form onSubmit={handleSubmit}>
           <input
-            placeholder="Tenant Name"
+            placeholder="Store Name"
             value={tenantName}
             onChange={(e) => setTenantName(e.target.value)}
             required
@@ -66,6 +66,11 @@ const Signup = () => {
         </form>
 
         {error && <p className="error">{error}</p>}
+        <p className="info-message">
+        You cannot register here unless you have my app installed in your Shopify store.<br />
+        For testing purposes, go to Login page and use email: <strong>aki@gmail.com</strong>, password: <strong>aki</strong>.<br />
+        If it is not working, kindly wait for a minute or two since the server needs to wake up after inactivity.
+        </p>
         <p>
           Already have an account? <Link to="/login">Login here</Link>
         </p>
