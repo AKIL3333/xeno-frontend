@@ -1,0 +1,107 @@
+/* dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-container header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dashboard-container header h1 {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Navigation Tabs */
+.dashboard-container nav {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-container nav button {
+  padding: 10px 20px;
+  background-color: #e5e7eb;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dashboard-container nav button:hover {
+  background-color: #d1d5db;
+}
+
+.dashboard-container nav button.active {
+  background-color: #2563eb;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.4);
+}
+
+/* Content Section */
+.dashboard-container section {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  min-height: 320px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Summary Table */
+.dashboard-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.dashboard-container th,
+.dashboard-container td {
+  padding: 12px 15px;
+  border: 1px solid #e5e7eb;
+}
+
+.dashboard-container th {
+  background-color: #2563eb;
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+}
+
+.dashboard-container td {
+  text-align: right;
+}
+
+.dashboard-container tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Messages */
+.dashboard-container p {
+  margin: 10px 0;
+}
+
+.dashboard-container p.error {
+  color: #dc2626;
+  font-weight: 500;
+  text-align: center;
+}
+
+.dashboard-container p.loading {
+  color: #6b7280;
+  text-align: center;
+}
