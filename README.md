@@ -1,4 +1,4 @@
-# Data Ingestion & Insights Applications
+ # Data Ingestion & Insights Applications
 Welcome to the frontend of Data Ingestion & Insights Applications website!!!
 This application allows users to sign up,login and view analytical insights of their shopify stores connected with my app.
 Note:You cannot connect with this app unless you have your store tested with this app.For testing purposes,use 
@@ -13,7 +13,7 @@ CSS – Styling
 ### How to get Started:
 Follow these steps to set up and run the project locally:
 ### 1.Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/your-username/your-repo-name.git   
 cd your-repo-name
 ### 2. Installing the dependencies
 Make sure you have Node.js (>= 16) and npm installed. Then run:npm install
