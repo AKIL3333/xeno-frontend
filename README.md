@@ -1,7 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# Data Ingestion & Insights Applications
+Welcome to the frontend of Data Ingestion & Insights Applications website!!!
+This application allows users to sign up,login and view analytical insights of their shopify stores connected with my app.
+Note:You cannot connect with this app unless you have your store tested with this app.For testing purposes,use #email:aki@gmail.com and #password:aki
 ## Available Scripts
 
 In the project directory, you can run:
