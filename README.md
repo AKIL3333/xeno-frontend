@@ -1,18 +1,24 @@
 # Data Ingestion & Insights Applications
 Welcome to the frontend of Data Ingestion & Insights Applications website!!!
 This application allows users to sign up,login and view analytical insights of their shopify stores connected with my app.
-Note:You cannot connect with this app unless you have your store tested with this app.For testing purposes,use #email:aki@gmail.com and #password:aki
-## Available Scripts
+Note:You cannot connect with this app unless you have your store tested with this app.For testing purposes,use email:aki@gmail.com and password:aki.
+## Tech Stack
+React.js  – UI library
+Axios – API requests
+React Router DOM – Routing
+Recharts – Data visualization
+CSS – Styling
 
-In the project directory, you can run:
+### How to get Started:
+Follow these steps to set up and run the project locally:
+### 1.Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+### 2. Installing the dependencies
+Make sure you have Node.js (>= 16) and npm installed. Then run:npm install
+### 3.Configure API endpoint
+Inside src/api/axiosClient.js, make sure the base URL points to your backend:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
