@@ -15,17 +15,7 @@
   padding-top: 20px;
 }
 
-.title-gradient {
-  font-size: 3rem;
-  font-weight: 900;
-  background: linear-gradient(90deg, #f96216, #efb644, #ebb625, #d3cb34);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  text-align: center;
-  letter-spacing: 1px;
-  animation: gradientShift 5s ease infinite;
-}
+/* Animation for gradient shift */
 .title-gradient {
   font-size: 3rem;
   font-weight: 900;
@@ -37,7 +27,8 @@
   letter-spacing: 1px;
   animation: gradientShift 5s ease infinite;
 }
-.subtitle {
+
+.subtitle {/* Subtitle with underline animation */
   font-size: 1.6rem;
   font-weight: 600;
   color: #1e40af;
@@ -95,7 +86,7 @@
   box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
 }
 
-/* Metrics Section (stretches fully) */
+/* Metrics Section which stretches down to the bottom */
 .metrics-section {
   flex-grow: 1;
   padding: 24px;
@@ -109,7 +100,7 @@
   margin: 0 20px 20px 20px; /* spacing from sides + bottom */
 }
 
-.metrics-section::before {
+.metrics-section::before {/* Gradient border effect */
   content: "";
   position: absolute;
   inset: 0;

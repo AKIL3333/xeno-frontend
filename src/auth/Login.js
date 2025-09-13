@@ -3,29 +3,29 @@ import axiosClient from '../api/axiosClient';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import './auth.css';
-
+// this is the login component where tenants can log in using their email and password
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const { login } = useContext(AuthContext);
+  const { login } = useContext(AuthContext);//getting login function from auth context which sets tenants id,toke, email and name in local storage
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
-
+    //making post request to login endpoint with email and password
     try {
       const res = await axiosClient.post('/auth/login', { email, password });
 
-      login({
+      login({ //on successful login we are storing token,tenant id,email and tenant name in local storage
         token: res.data.token,
         tenantId: res.data.tenantId,
         email,
         tenantName: res.data.tenantName,
       });
 
-      navigate('/dashboard');
+      navigate('/dashboard');//navigating to dashboard on successful login
     } catch (err) {
       console.error(err);
       setError(err.response?.data?.error || 'Login failed');

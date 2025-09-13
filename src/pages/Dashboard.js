@@ -5,22 +5,22 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, BarChart, Bar, ResponsiveContainer
 } from 'recharts';
 import './Dashboard.css';
-
+//getting auth context to access token and tenant id
 const Dashboard = () => {
   const { auth } = useContext(AuthContext);
-  const [activeTab, setActiveTab] = useState('summary');
+  const [activeTab, setActiveTab] = useState('summary');//default tab is summary tab
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const tenantName = auth.tenantName;
-
+  const tenantName = auth.tenantName;//storing the tenant name from auth context
+  //function to fetch data based on active tab
   const fetchData = async (endpoint) => {
     setLoading(true);
     setError(null);
     try {
       const res = await axiosClient.get(`/dashboard/${endpoint}`, {
-        headers: {
+        headers: {//attaching token and tenant id in headers
           'Authorization': `Bearer ${auth.token}`,
           'x-tenant-id': auth.tenantId
         }
@@ -28,17 +28,17 @@ const Dashboard = () => {
       setData(res.data);
     } catch (err) {
       console.error(err);
-      setError('Failed to fetch data');
+      setError('Failed to fetch data');//setting error message if fetch fails
     } finally {
       setLoading(false);
     }
   };
-
+  //fetch data whenever active tab changes
   useEffect(() => {
     setData(null);
     fetchData(activeTab);
   }, [activeTab]);
-
+  //function to render chart based on active tab and fetched data
   const renderChart = () => {
     if (!data) return <p>No data available</p>;
 
@@ -94,7 +94,7 @@ const Dashboard = () => {
       case 'summary':
         const summaryObj = !data || Array.isArray(data) ? {} : data;
         const summaryData = Object.entries(summaryObj).map(([key, value]) => ({ name: key, value }));
-
+        //transforming summary object into array for table display
         return (
           <div className="summary-wrapper">
             <table className="summary-table">
@@ -120,7 +120,7 @@ const Dashboard = () => {
         return <p>Unknown tab</p>;
     }
   };
-
+ //jsx for dashboard layout with chart section and tab navigation
   return (
     <div className="dashboard-container">
       <header>

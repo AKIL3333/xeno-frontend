@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axiosClient from '../api/axiosClient';
 import { useNavigate, Link } from 'react-router-dom';
 import './auth.css';
-
+// this is the signup component where new tenants can register using their store name,shopify shop url,email and password
 const Signup = () => {
   const [tenantName, setTenantName] = useState('');
   const [shopifyShop, setShopifyShop] = useState('');
@@ -10,11 +10,11 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
-
+    //making post request to signup endpoint with tenant name,shopify shop url,email and password
     try {
       await axiosClient.post('/auth/signup', {
         tenantName,
