@@ -32,48 +32,54 @@ const Signup = () => {
   };
 
   return (
-    <div className="auth-container">
-      <div className="auth-box">
-        <h2>Tenant Signup</h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            placeholder="Store Name"
-            value={tenantName}
-            onChange={(e) => setTenantName(e.target.value)}
-            required
-          />
-          <input
-            placeholder="Shopify Shop URL"
-            value={shopifyShop}
-            onChange={(e) => setShopifyShop(e.target.value)}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <button type="submit">Signup</button>
-        </form>
+    <div className="auth-page">
+      <header className="auth-header">
+        <h1>Data Ingestion & Insights Applications</h1>
+      </header>
 
-        {error && <p className="error">{error}</p>}
-        <p className="info-message">
-        You cannot register here unless you have my app installed in your Shopify store.<br />
-        For testing purposes, go to Login page and use email: <strong>aki@gmail.com</strong>, password: <strong>aki</strong>.<br />
-        If it is not working, kindly wait for a minute or two since the server needs to wake up after inactivity.
-        </p>
-        <p>
-          Already have an account? <Link to="/login">Login here</Link>
-        </p>
+      <div className="auth-container">
+        <div className="auth-box">
+          <h2>Tenant Signup</h2>
+          <form onSubmit={handleSubmit}>
+            <input
+              placeholder="Store Name"
+              value={tenantName}
+              onChange={(e) => setTenantName(e.target.value)}
+              required
+            />
+            <input
+              placeholder="Shopify Shop URL"
+              value={shopifyShop}
+              onChange={(e) => setShopifyShop(e.target.value)}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <button type="submit">Signup</button>
+          </form>
+
+          {error && <p className="error">{error}</p>}
+          <p className="info-message">
+            You cannot register here unless you have my app installed in your Shopify store.<br />
+            For testing purposes, go to Login page and use email: <strong>aki@gmail.com</strong>, password: <strong>aki</strong>.<br />
+            If it is not working, kindly wait for a minute or two since the server needs to wake up after inactivity.
+          </p>
+          <p>
+            Already have an account? <Link to="/login">Login here</Link>
+          </p>
+        </div>
       </div>
     </div>
   );
