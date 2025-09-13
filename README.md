@@ -4,10 +4,10 @@ This application allows users to sign up,login and view analytical insights of t
 Note:You cannot connect with this app unless you have your store tested with this app.For testing purposes,use 
 #### email:aki@gmail.com and password:aki.
 ## Tech Stack
-React.js  – UI library
-Axios – API requests
-React Router DOM – Routing
-Recharts – Data visualization
+React.js  – UI library  
+Axios – API requests  
+React Router DOM – Routing  
+Recharts – Data visualization  
 CSS – Styling
 
 ### How to get Started:
