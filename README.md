@@ -27,8 +27,8 @@ npm start
 Your app should now be running at http://localhost:3000/
 # Deployed website URL:https://xeno-frontend-omega.vercel.app/
 # Available Pages:
-Signup->/signup
-Login->/login
+Signup->/signup  
+Login->/login  
 Dashboard->/dashboard
 
 # Contribute:
