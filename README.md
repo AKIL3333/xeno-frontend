@@ -34,6 +34,6 @@ Dashboard->/dashboard
 # Contribute:
 Always feel free to fork this repo,contribute and submit PRs.Appreciate the feedback.
 ### Author
-AKIL S
-VELLORE INSTITUTE OF TECHNOLOGY,CHENNAI
+AKIL S  
+VELLORE INSTITUTE OF TECHNOLOGY,CHENNAI  
 akil031204@gmail.com
