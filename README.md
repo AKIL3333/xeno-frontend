@@ -25,13 +25,13 @@ REACT_APP_API_URL=https://xeno-backend-3bn5.onrender.com/api (use your backend u
 npm start
 
 Your app should now be running at http://localhost:3000/
-# Deployed website URL:https://xeno-frontend-omega.vercel.app/
-# Available Pages:
+### Deployed website URL:https://xeno-frontend-omega.vercel.app/
+### Available Pages:
 Signup->/signup  
 Login->/login  
 Dashboard->/dashboard
 
-# Contribute:
+### Contribute:
 Always feel free to fork this repo,contribute and submit PRs.Appreciate the feedback.
 ### Author
 AKIL S  
