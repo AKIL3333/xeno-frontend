@@ -73,7 +73,7 @@ const Signup = () => {
           {error && <p className="error">{error}</p>}
           <p className="info-message">
             You cannot register here unless you have my app installed in your Shopify store.<br />
-            For testing purposes, go to Login page and use email: <strong>aki@gmail.com</strong>, password: <strong>aki</strong>.<br />
+            For testing purposes, go to Login page and use email: <strong>aki@gmail.com</strong>, password: <strong>aki</strong>.<br /> or <strong>akil@gmail.com</strong>, password: <strong>123</strong>.<br />
             If it is not working, kindly wait for a minute or two since the server needs to wake up after inactivity.
           </p>
           <p>
