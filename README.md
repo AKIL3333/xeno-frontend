@@ -18,7 +18,7 @@ cd your-repo-name
 ### 2. Installing the dependencies
 Make sure you have Node.js (>= 16) and npm installed. Then run:npm install
 ### 3.Configure API endpoint
-Create a .env folder and ensure the base URL points to your backend:
+Create a .env file and ensure the base URL points to your backend:
 REACT_APP_API_URL=https://xeno-backend-3bn5.onrender.com/api (use your backend url if you have one)
 
 ### 4.Start the development server
