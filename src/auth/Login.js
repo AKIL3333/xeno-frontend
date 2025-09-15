@@ -64,6 +64,10 @@ const Login = () => {
             Don't have an account? <Link to="/signup">Sign up</Link>
           </p>
         </div>
+            <p className="server-hint">
+      Note: For the first login attempt, the server may take 1–2 minutes to boot up.  
+      If login does not work immediately, please try again after a short wait.
+    </p>
       </div>
     </div>
   );
